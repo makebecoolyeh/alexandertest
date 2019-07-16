@@ -118,7 +118,7 @@ class CalendarService {
             }
             if(self::getDayOfTheWeek($strDate) == 1) { //if it is Monday
                 if(self::isHoliday('-1 day '.$strDate) || self::isHoliday('-2 day '.$strDate)) {
-                    return true;
+                    return 'This Monday is day off after holiday in weekend.';
                 }
             }
         }

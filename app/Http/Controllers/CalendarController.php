@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Services\CalendarService;
 
-class CalendarServiceController extends Controller
+class CalendarController extends Controller
 {
     public function store(Request $request) {
         $rules = [
